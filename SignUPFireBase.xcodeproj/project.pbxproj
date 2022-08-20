@@ -13,9 +13,13 @@
 		84ACB9162816704D007C6875 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ACB9142816704D007C6875 /* Main.storyboard */; };
 		84ACB9182816704E007C6875 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84ACB9172816704E007C6875 /* Assets.xcassets */; };
 		84ACB91B2816704E007C6875 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84ACB9192816704E007C6875 /* LaunchScreen.storyboard */; };
+		84ACB9232816744F007C6875 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84ACB9222816744F007C6875 /* GoogleService-Info.plist */; };
+		84ACB9282816CA02007C6875 /* AppleSignInHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84ACB9272816CA02007C6875 /* AppleSignInHelper.swift */; };
+		BBAB8D188BADC13E231CBAA4 /* Pods_SignUPFireBase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCF9CD0AF8B0FCF73265C0B2 /* Pods_SignUPFireBase.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1026E319359022B92E0E5F5A /* Pods-SignUPFireBase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignUPFireBase.debug.xcconfig"; path = "Target Support Files/Pods-SignUPFireBase/Pods-SignUPFireBase.debug.xcconfig"; sourceTree = "<group>"; };
 		84ACB90B2816704D007C6875 /* SignUPFireBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SignUPFireBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84ACB90E2816704D007C6875 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84ACB9102816704D007C6875 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +28,11 @@
 		84ACB9172816704E007C6875 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84ACB91A2816704E007C6875 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84ACB91C2816704E007C6875 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84ACB9222816744F007C6875 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		84ACB92428167F6F007C6875 /* SignUPFireBase.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SignUPFireBase.entitlements; sourceTree = "<group>"; };
+		84ACB9272816CA02007C6875 /* AppleSignInHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSignInHelper.swift; sourceTree = "<group>"; };
+		A0926AED81D2E4D02A2621C9 /* Pods-SignUPFireBase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SignUPFireBase.release.xcconfig"; path = "Target Support Files/Pods-SignUPFireBase/Pods-SignUPFireBase.release.xcconfig"; sourceTree = "<group>"; };
+		FCF9CD0AF8B0FCF73265C0B2 /* Pods_SignUPFireBase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SignUPFireBase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBAB8D188BADC13E231CBAA4 /* Pods_SignUPFireBase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +50,11 @@
 		84ACB9022816704D007C6875 = {
 			isa = PBXGroup;
 			children = (
+				84ACB9222816744F007C6875 /* GoogleService-Info.plist */,
 				84ACB90D2816704D007C6875 /* SignUPFireBase */,
 				84ACB90C2816704D007C6875 /* Products */,
+				E72FAA3CF77C2976FCB995A0 /* Pods */,
+				95F3E5E8965623DC4EA38EDD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +69,7 @@
 		84ACB90D2816704D007C6875 /* SignUPFireBase */ = {
 			isa = PBXGroup;
 			children = (
+				84ACB92428167F6F007C6875 /* SignUPFireBase.entitlements */,
 				84ACB90E2816704D007C6875 /* AppDelegate.swift */,
 				84ACB9102816704D007C6875 /* SceneDelegate.swift */,
 				84ACB9122816704D007C6875 /* ViewController.swift */,
@@ -63,8 +77,26 @@
 				84ACB9172816704E007C6875 /* Assets.xcassets */,
 				84ACB9192816704E007C6875 /* LaunchScreen.storyboard */,
 				84ACB91C2816704E007C6875 /* Info.plist */,
+				84ACB9272816CA02007C6875 /* AppleSignInHelper.swift */,
 			);
 			path = SignUPFireBase;
+			sourceTree = "<group>";
+		};
+		95F3E5E8965623DC4EA38EDD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FCF9CD0AF8B0FCF73265C0B2 /* Pods_SignUPFireBase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E72FAA3CF77C2976FCB995A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1026E319359022B92E0E5F5A /* Pods-SignUPFireBase.debug.xcconfig */,
+				A0926AED81D2E4D02A2621C9 /* Pods-SignUPFireBase.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84ACB91F2816704E007C6875 /* Build configuration list for PBXNativeTarget "SignUPFireBase" */;
 			buildPhases = (
+				4F74993AAA1139E19F558225 /* [CP] Check Pods Manifest.lock */,
 				84ACB9072816704D007C6875 /* Sources */,
 				84ACB9082816704D007C6875 /* Frameworks */,
 				84ACB9092816704D007C6875 /* Resources */,
+				D0B781B6ED527C75A5B09636 /* [CP] Embed Pods Frameworks */,
+				84264827283370A1009DE659 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -126,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84ACB91B2816704E007C6875 /* LaunchScreen.storyboard in Resources */,
+				84ACB9232816744F007C6875 /* GoogleService-Info.plist in Resources */,
 				84ACB9182816704E007C6875 /* Assets.xcassets in Resources */,
 				84ACB9162816704D007C6875 /* Main.storyboard in Resources */,
 			);
@@ -133,11 +169,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F74993AAA1139E19F558225 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SignUPFireBase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84264827283370A1009DE659 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+		D0B781B6ED527C75A5B09636 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SignUPFireBase/Pods-SignUPFireBase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SignUPFireBase/Pods-SignUPFireBase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SignUPFireBase/Pods-SignUPFireBase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84ACB9072816704D007C6875 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84ACB9282816CA02007C6875 /* AppleSignInHelper.swift in Sources */,
 				84ACB9132816704D007C6875 /* ViewController.swift in Sources */,
 				84ACB90F2816704D007C6875 /* AppDelegate.swift in Sources */,
 				84ACB9112816704D007C6875 /* SceneDelegate.swift in Sources */,
@@ -284,9 +382,11 @@
 		};
 		84ACB9202816704E007C6875 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1026E319359022B92E0E5F5A /* Pods-SignUPFireBase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SignUPFireBase/SignUPFireBase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -301,7 +401,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Appinventiv.SignUPFireBase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.SignUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -311,9 +411,11 @@
 		};
 		84ACB9212816704E007C6875 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0926AED81D2E4D02A2621C9 /* Pods-SignUPFireBase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SignUPFireBase/SignUPFireBase.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -328,7 +430,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Appinventiv.SignUPFireBase;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ios.SignUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
